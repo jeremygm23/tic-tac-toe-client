@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Example</title>
+      <title>TIC TAC TOE</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <!-- Do not add `link` tags-->
@@ -12,6 +12,43 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-      <h1>Browser Template</h1>
+      <header>
+        <h1>Tic Tac Toe</h1>
+      </header>
+
+      <section id="game-board">
+        <div class="row">
+          <div class="col"></div>
+          <div class="col"></div>
+          <div class="col"></div>
+        </div>
+        <div class="row">
+          <div class="col"></div>
+          <div class="col"></div>
+          <div class="col"></div>
+        </div>
+        <div class="row">
+          <div class="col"></div>
+          <div class="col"></div>
+          <div class="col"></div>
+        </div>
+      </section>
+
+      <section id="current-score">
+        <h2>Current Score</h2>
+        <h4>Player 1: 0</h4>
+        <h4>Player 2: 0</h4>
+      </section>
+
+      <section id="game-buttons">
+        <button id="reset-btn">Reset</button>
+        <button id="new-game-btn">New Game</button>
+      </section>
+      <section id="login-signup">
+        <button>Login In</button>
+        <button>Sign Up</button>
+      </section>
+
+
     </body>
 </html>
