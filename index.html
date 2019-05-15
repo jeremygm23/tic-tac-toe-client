@@ -17,37 +17,45 @@
       </header>
 
       <section id="game-board">
+        <div class="game-wrap">
         <div class="row">
-          <div class="col"></div>
-          <div class="col"></div>
-          <div class="col"></div>
+          <div class="col" data-x=0 data-y=0>1</div>
+          <div class="col"data-x=0 data-y=1>2</div>
+          <div class="col"data-x=0 data-y=2>3</div>
         </div>
         <div class="row">
-          <div class="col"></div>
-          <div class="col"></div>
-          <div class="col"></div>
+          <div class="col" data-x=1 data-y=0>4</div>
+          <div class="col" data-x=1 data-y=1>5</div>
+          <div class="col" data-x=1 data-y=2>6</div>
         </div>
         <div class="row">
-          <div class="col"></div>
-          <div class="col"></div>
-          <div class="col"></div>
+          <div class="col" data-x=2 data-y=0>7</div>
+          <div class="col" data-x=2 data-y=1>8</div>
+          <div class="col" data-x=2 data-y=2>9</div>
+        </div>
         </div>
       </section>
-
-      <section id="current-score">
+<section class="bottom">
+      <section class="current-score">
         <h2>Current Score</h2>
-        <h4>Player 1: 0</h4>
-        <h4>Player 2: 0</h4>
+        <h4 class="player-1">Player X: <span class="playerX">0</span></h4>
+        <h4 class="player-2">Player O: <span class="playerO">0</span></h4>
       </section>
 
-      <section id="game-buttons">
-        <button id="reset-btn">Reset</button>
-        <button id="new-game-btn">New Game</button>
+      <section class="game-buttons">
+        <h2>Reset Game | New Game</h2>
+        <button class="reset-btn">Reset</button>
+        <button class="new-game-btn">New Game</button>
       </section>
-      <section id="login-signup">
-        <button>Login In</button>
-        <button>Sign Up</button>
+      <div></div>
+
+
+      <section class="login-signup">
+        <h2>Log in | Create Account</h2>
+        <button class="log-btn">Login In</button>
+        <button class="sign-btn">Sign Up</button>
       </section>
+</section>
 
 
     </body>
