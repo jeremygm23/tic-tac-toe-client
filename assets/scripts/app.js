@@ -11,7 +11,7 @@ $(() => {
 })
 
 
-let gameBoard = [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ' ]
+let gameBoard = [' ', ' '', ' ', ' ', ' ', ' ', ' ', ' ', ' ' ]
 const player_X = "X"
 const player_O = "O"
 const winners = [
