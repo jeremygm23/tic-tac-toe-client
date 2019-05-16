@@ -63,7 +63,7 @@ header {
   margin-top: 65px;
   justify-content: space-around;
   align-items: center;
-  height: 200px;
+  height: 240px;
 }
 
 
@@ -137,6 +137,8 @@ h4 {
   color: white;
   font-weight: bold;
   margin-left: 80px;
+  position: relative;
+  right: 20px;
 
 }
 
@@ -144,32 +146,65 @@ h4 {
 .login-signup {
 border-left: 1px solid black;
 height: 100%;
+margin-left: -80px;
 
   h2 {
-    margin-left: 30px;
+    margin-left: 20px;
+
   }
 
 .log-btn {
-  padding: 20px;
+  padding: 10px;
   border-radius: 1%;
   background: blue;
   color: white;
   font-weight: bold;
   margin-left: 40px;
+  position: relative;
+  bottom: -15px;
+  left: 10px;
 }
 
 .sign-btn {
-  padding: 20px;
+  padding: 10px;
   border-radius: 1%;
   background: blue;
   color: white;
   font-weight: bold;
   margin-left: 100px;
+  position: relative;
+  left: 190px;
+  bottom: 160px;
 }
 }
 
+.log-email, .log-password {
+  display: block;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  position: relative;
+  bottom: 10px;
+  padding: 5px
+}
 
+.create-email, .new-password, .old-password {
+  display: block;
+  margin-bottom: 5px;
+  padding: 5px;
+  position: relative;
+  left: 240px;
+  bottom: 163px;
+}
 
+.create {
+  position: relative;
+  left: 25px;
+}
+
+.divider {
+  position: relative;
+  left: 10px;
+}
 
 .winner {
   display: none;
