@@ -10,24 +10,46 @@ $(() => {
   // your JS code goes here
 })
 
-const player1 = "X"
-const player2 = "O"
+
+let gameBoard = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+const player_X = "X"
+const player_O = "O"
+const winners = [
+  [0, 1, 2],
+  [3, 4, 5],
+  [6, 7, 8],
+  [0, 3, 6],
+  [1, 4, 7],
+  [2, 5, 8],
+  [0, 4, 8],
+  [6, 4, 2]
+]
+
+const cells = $('.cell')
+
+startGame()
 
 
-$(document).ready(function(){
-  const gameBoard = [
-    ["", "", ""]
-    ["", "", ""]
-    ["", "", ""]
-  ]
-})
-
-
-$('.col').click(function (){
-  $(this).html(player1)
-  const x = $(this).data('x')
-  const y = $(this).data('y')
-  gameBoard[x][y] = player1
+function startGame() {
+  $('.winner').html("display", "none")
+  gameBoard = Array.from(Array(9).keys());
   console.log(gameBoard)
+      for(let i = 0; i < cells.length; i++) {
+        cells[i].innerText = ''
+        cells[i].addEventListener("click", cellClick, false)
 
-})
+  }
+}
+
+
+
+ function cellClick (cell) {
+  playerTurn(cell.target.id, player_X)
+
+
+}
+
+function playerTurn (cellId, player) {
+   gameBoard[cellId] = player
+   document.getElementById(cellId).innerHTML = player
+}
