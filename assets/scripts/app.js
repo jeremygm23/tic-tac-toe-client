@@ -11,7 +11,7 @@ $(() => {
 })
 
 
-let gameBoard = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+let gameBoard = [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ' ]
 const player_X = "X"
 const player_O = "O"
 const winners = [
@@ -22,7 +22,7 @@ const winners = [
   [1, 4, 7],
   [2, 5, 8],
   [0, 4, 8],
-  [6, 4, 2],
+  [6, 4, 2]
 ]
 
 const cells = $('.cell')
